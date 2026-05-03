@@ -7,6 +7,48 @@
     <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
-    <h1 class="test">Hello</h1>
+    <header>
+      <img src="/images/logo.svg" alt="Base Apparel logo" />
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero__image">
+          <picture>
+            <source
+              media="(min-width: 64rem)"
+              srcset="/images/hero-desktop.jpg"
+            />
+            <img
+              src="/images/hero-mobile.jpg"
+              alt="woman in a button down with a bracelet on"
+            />
+          </picture>
+        </div>
+        <div class="hero__content">
+          <div class="hero__text">
+            <h1 class="test">We're coming soon</h1>
+            <p>
+              Hello fellow shoppers! We're currently building our new fashion
+              store. Add your email below to stay up-to-date with announcements
+              and our launch deals.
+            </p>
+          </div>
+          <div class="hero__form">
+            <form id="newsletter-sign-up-form">
+              <input
+                type="email"
+                autocomplete="email"
+                id="email"
+                name="email"
+                placeholder="Email Address"
+              />
+              <button type="submit" aria-label="form submit button">
+                <img src="/images/icon-arrow.svg" alt="arrow icon" />
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
