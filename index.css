@@ -158,4 +158,41 @@ header {
   justify-content: center;
   gap: 1rem;
   text-align: center;
+}
+.hero .hero__form {
+  position: relative;
+  width: -webkit-fill-available;
+  width: -moz-available;
+  width: stretch;
+}
+.hero input {
+  border-radius: 9999px;
+  border: 1px solid hsl(0, 36%, 70%);
+  padding: 1rem 2rem;
+  width: -webkit-fill-available;
+  width: -moz-available;
+  width: stretch;
+}
+.hero input::-moz-placeholder {
+  color: rgba(206.04, 150.96, 150.96, 0.5);
+}
+.hero input::placeholder {
+  color: rgba(206.04, 150.96, 150.96, 0.5);
+}
+.hero button {
+  align-items: center;
+  background: linear-gradient(135deg, hsl(0, 80%, 86%) 0%, hsl(0, 74%, 74%) 100%);
+  border: 1px solid rgba(206.04, 150.96, 150.96, 0.2);
+  border-radius: 9999px;
+  box-shadow: 0 15px 20px 0 rgba(198, 110, 110, 0.25);
+  cursor: pointer;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  min-width: 100px;
+  padding: 1rem 2.5rem;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
 }/*# sourceMappingURL=index.css.map */
