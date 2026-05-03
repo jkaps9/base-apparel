@@ -1,0 +1,7 @@
+@use "~jk-sass-lib/sass" as lib with (
+  $color-primary: #ff0000
+);
+
+h1 {
+  color: lib.$color-primary;
+}
