@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/jkaps9/space-tourism-site](https://github.com/jkaps9/space-tourism-site)
+- Solution URL: [https://github.com/jkaps9/base-apparel](https://github.com/jkaps9/base-apparel)
 - Live Site URL: [https://spaceventures.netlify.app/](https://spaceventures.netlify.app/)
 
 ## My process
