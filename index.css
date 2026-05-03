@@ -104,7 +104,58 @@ h6 {
   src: url("../fonts/josefin-sans-v34-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 body {
-  color: hsl(0, 36%, 70%);
   font-family: "Josefin Sans", sans-serif;
   font-size: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: hsl(0, 6%, 24%);
+  line-height: 1.1;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+p {
+  color: hsl(0, 36%, 70%);
+}
+
+header {
+  padding: 2.5rem 2rem;
+}
+
+.topper {
+  color: hsl(0, 36%, 70%);
+  display: block;
+  margin: 0;
+  font-weight: 300;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  letter-spacing: 8px;
+}
+.hero__image img {
+  width: 100%;
+}
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 4rem 1rem;
+}
+.hero__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  text-align: center;
 }/*# sourceMappingURL=index.css.map */
