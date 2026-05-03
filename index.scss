@@ -75,10 +75,14 @@ header {
 }
 
 .hero {
+  @include lib.respond-to(lg) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
   h1 {
-    font-size: 3rem;
-    font-weight: 400;
-    letter-spacing: 8px;
+    font-size: clamp(2.5rem, 1.9718rem + 2.2535vw, 4rem);
+    font-weight: 600;
+    letter-spacing: clamp(0.625rem, 0.4599rem + 0.7042vw, 1.0938rem);
   }
   &__image {
     img {
@@ -92,12 +96,21 @@ header {
     margin: 0 auto;
     max-width: 445px;
     padding: lib.$space-16 lib.$space-4;
+    @include lib.respond-to(md) {
+      padding: 0;
+    }
   }
 
   &__text {
     @include lib.flex-center(column);
     gap: lib.$space-4;
     text-align: center;
+    @include lib.respond-to(md) {
+      line-height: 2.15;
+    }
+    @include lib.respond-to(lg) {
+      text-align: start;
+    }
   }
 
   .hero__form {
