@@ -165,6 +165,16 @@ header {
   width: -moz-available;
   width: stretch;
 }
+.hero .form-row {
+  position: relative;
+}
+.hero .form-row:has(input:user-invalid) input {
+  border: 2px solid #f96464;
+}
+.hero .form-row:has(input:user-invalid) .error-icon,
+.hero .form-row:has(input:user-invalid) .error-message {
+  display: block;
+}
 .hero input {
   border-radius: 9999px;
   border: 1px solid hsl(0, 36%, 70%);
@@ -198,4 +208,18 @@ header {
 }
 .hero button:hover {
   opacity: 0.5;
+}
+.hero .error-message {
+  display: none;
+  bottom: -2rem;
+  left: 2rem;
+  color: #f96464;
+  position: absolute;
+}
+.hero .error-icon {
+  display: none;
+  position: absolute;
+  right: 108px;
+  top: 50%;
+  transform: translateY(-50%);
 }/*# sourceMappingURL=index.css.map */

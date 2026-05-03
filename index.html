@@ -35,16 +35,25 @@
           </div>
           <div class="hero__form">
             <form id="newsletter-sign-up-form">
-              <input
-                type="email"
-                autocomplete="email"
-                id="email"
-                name="email"
-                placeholder="Email Address"
-              />
-              <button type="submit" aria-label="form submit button">
-                <img src="/images/icon-arrow.svg" alt="arrow icon" />
-              </button>
+              <div class="form-row">
+                <input
+                  type="email"
+                  autocomplete="email"
+                  id="email"
+                  name="email"
+                  placeholder="Email Address"
+                  required
+                />
+                <button type="submit" aria-label="form submit button">
+                  <img src="/images/icon-arrow.svg" alt="arrow icon" />
+                </button>
+                <div class="error-message">
+                  Please provide a valid email address
+                </div>
+                <div class="error-icon">
+                  <img src="/images/icon-error.svg" alt="" />
+                </div>
+              </div>
             </form>
           </div>
         </div>

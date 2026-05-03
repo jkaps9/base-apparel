@@ -1,7 +1,8 @@
 @use "~jk-sass-lib/sass/reset";
 @use "~jk-sass-lib/sass" as lib with (
   $color-primary: hsl(0, 36%, 70%),
-  $color-text: hsl(0, 36%, 70%)
+  $color-text: hsl(0, 36%, 70%),
+  $color-error: #f96464
 );
 
 $grey-900: hsl(0, 6%, 24%);
@@ -102,6 +103,20 @@ header {
     width: stretch;
   }
 
+  .form-row {
+    position: relative;
+
+    &:has(input:user-invalid) {
+      input {
+        border: 2px solid lib.$color-error;
+      }
+      .error-icon,
+      .error-message {
+        display: block;
+      }
+    }
+  }
+
   input {
     border-radius: lib.$radius-full;
     border: 1px solid lib.$color-primary;
@@ -133,5 +148,21 @@ header {
     &:hover {
       opacity: 0.5;
     }
+  }
+
+  .error-message {
+    display: none;
+    bottom: calc(-1 * lib.$space-8);
+    left: lib.$space-8;
+    color: lib.$color-error;
+    position: absolute;
+  }
+
+  .error-icon {
+    display: none;
+    position: absolute;
+    right: 108px;
+    top: 50%;
+    transform: translateY(-50%);
   }
 }
