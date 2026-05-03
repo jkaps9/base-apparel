@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/jkaps9/base-apparel](https://github.com/jkaps9/base-apparel)
-- Live Site URL: [https://spaceventures.netlify.app/](https://spaceventures.netlify.app/)
+- Live Site URL: [http://jkaps9.github.io/base-apparel](http://jkaps9.github.io/base-apparel)
 
 ## My process
 
