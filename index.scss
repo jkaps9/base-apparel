@@ -89,6 +89,8 @@ header {
   &__content {
     @include lib.flex-center(column);
     gap: lib.$space-8;
+    margin: 0 auto;
+    max-width: 445px;
     padding: lib.$space-16 lib.$space-4;
   }
 
@@ -138,8 +140,8 @@ header {
     display: flex;
     height: 100%;
     justify-content: center;
-    min-width: 100px;
-    padding: lib.$space-4 2.5rem;
+    min-width: 4rem;
+    padding: lib.$space-4 lib.$space-6;
     position: absolute;
     top: 50%;
     right: 0;
@@ -147,6 +149,11 @@ header {
 
     &:hover {
       opacity: 0.5;
+    }
+
+    @include lib.respond-to(md) {
+      min-width: lib.rem(100);
+      padding: lib.$space-4 lib.rem(40);
     }
   }
 
