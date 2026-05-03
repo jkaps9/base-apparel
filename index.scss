@@ -65,6 +65,9 @@ p {
 
 header {
   padding: 2.5rem lib.$space-8;
+  @include lib.respond-to(lg) {
+    padding-left: 14vw;
+  }
 }
 
 .topper {
@@ -87,6 +90,7 @@ header {
   &__image {
     img {
       width: 100%;
+      transform: scale(1.3);
     }
   }
 
