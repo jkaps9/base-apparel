@@ -129,5 +129,9 @@ header {
     top: 50%;
     right: 0;
     transform: translateY(-50%);
+
+    &:hover {
+      opacity: 0.5;
+    }
   }
 }

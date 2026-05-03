@@ -195,4 +195,7 @@ header {
   top: 50%;
   right: 0;
   transform: translateY(-50%);
+}
+.hero button:hover {
+  opacity: 0.5;
 }/*# sourceMappingURL=index.css.map */
